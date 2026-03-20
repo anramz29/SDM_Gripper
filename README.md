@@ -6,6 +6,15 @@ A four-finger underactuated robotic gripper inspired by the SDM Hand (Dollar & H
 
 ![Grasping Configurations](media/Grasping_Configurations.png)
 
+## How to Run
+
+**Requirements:** SolidWorks with the Motion Analysis add-in enabled.
+
+1. Open `final_assem.SLDASM` in SolidWorks. If prompted to locate missing references, point each part to the corresponding `.SLDPRT` file in the same directory.
+2. In the bottom panel, select the **Motion Study** tab.
+3. Click **Calculate** (or **Play**) to run the simulation.
+4. To test a different object geometry, suppress the current object body in the assembly tree and unsuppress the desired one, then recalculate.
+
 ## Overview
 
 Fully actuated robotic hands offer dexterity but are mechanically complex. Simple grippers lack versatility. This design occupies the middle ground: a **1-DOF-per-finger underactuated hand** that uses torsional springs at passive joints to conform to object geometry without additional actuation.
