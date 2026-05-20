@@ -10,7 +10,7 @@ A four-finger underactuated robotic gripper inspired by the SDM Hand (Dollar & H
 
 **Requirements:** SolidWorks with the Motion Analysis add-in enabled.
 
-1. Open `final_assem.SLDASM` in SolidWorks. If prompted to locate missing references, point each part to the corresponding `.SLDPRT` file in the same directory.
+1. Open `cad/assemblies/final_assem.SLDASM` in SolidWorks. If prompted to locate missing references, point each part to the corresponding `.SLDPRT` file in `cad/parts/`.
 2. In the bottom panel, select the **Motion Study** tab.
 3. Click **Calculate** (or **Play**) to run the simulation.
 4. To test a different object geometry, suppress the current object body in the assembly tree and unsuppress the desired one, then recalculate.
@@ -86,11 +86,19 @@ Angular displacement plots confirm that the actuated base joint θ₁ shows a tr
 
 ## CAD Files
 
-All parts modeled in SolidWorks (`.SLDPRT`), assembled in `final_assem.SLDASM`.
+All parts modeled in SolidWorks (`.SLDPRT`), assembled in `cad/assemblies/final_assem.SLDASM`.
+
+**Assemblies** (`cad/assemblies/`)
 
 | File | Description |
 |------|-------------|
 | `final_assem.SLDASM` | Main assembly |
+| `final_assem_backup.SLDASM` | Backup assembly |
+
+**Parts** (`cad/parts/`)
+
+| File | Description |
+|------|-------------|
 | `final_base.SLDPRT` | Palm/base structure |
 | `distal_link_final.SLDPRT` | Distal phalanx |
 | `middle_final_link.SLDPRT` | Middle phalanx |
